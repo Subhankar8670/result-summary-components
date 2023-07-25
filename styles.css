@@ -229,9 +229,10 @@ span {
 @media(max-width: 480px){
     .firstCard{
         width: 85%;
-        border-radius: 0px;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
+        border-radius: 20px;
+        margin : 0px;
+/*         border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px; */
     }
 
     .roundShape{
