@@ -227,11 +227,10 @@ span {
   }
 
 @media(max-width: 750px) {
-    .firstCard {
+     .firstCard {
         width: 85%;
-        border-radius: 0px;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
+        border-radius: 20px;
+        margin-right: 2.5rem;
     }
 
     .roundShape {
