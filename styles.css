@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+    --light-slate-blue
+    /* ---(background)*/
+    : hsl(252, 100%, 67%);
+    --light-royal-blue
+    /* ---(background)*/
+    : hsl(241, 81%, 54%);
+
+    --violet-blue
+    /* ---(circle)*/
+    : hsla(256, 72%, 46%, 1);
+    --persian-blue
+    /*(circle)*/
+    : hsla(241, 72%, 46%, 0);
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.scoreContent {
+    font-size: 14px;
+    width: 70%;
+    padding: 10px;
+    margin: auto;
+    color: white;
+    opacity: 0.7;
+    text-align: center;
+}
+
+.outOf {
+    opacity: 0.67;
+    font-size: 0.8rem;
+    opacity: 0.67;
+}
+
+.yourResult {
+    font-size: 18px;
+    margin: 2rem auto;
+    opacity: 0.67;
+}
+
+.great {
+    font-size: 1.8rem;
+    margin: auto;
+
+
+}
+
+.container {
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.firstCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+    height: 54vh;
+    width: 19vw;
+    border-radius: 32px;
+    color: var(--white);
+    position: relative;
+    left: 20px;
+    /* box-shadow: 0 0 35px 0px var(--pale-blue); */
+}
+
+.roundShape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 10vw;
+    border-radius: 100%;
+    background: linear-gradient(var(--violet-blue), var(--persian-blue));
+}
+
+.total-number {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.secondCard {
+    background-color: var(--white);
+    width: 20vw;
+    height: 54vh;
+   
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+    box-shadow: 12px 35px 35px 0 var(--pale-blue);
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+button {
+    border: 0;
+    line-height: 2.5;
+    width: 80%;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--white);
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 30px;
+    background-color: var(--dark-gray-blue);
+    margin: 0 0 2rem 2.7rem;
+
+}
+
+button:hover {
+    background-color: var(--cobalt-blue);
+    color: var(--green-teal);
+}
+
+
+.secondCard h4 {
+    color: var(--dark-gray-blue);
+    margin: 1.3rem 0 0 2rem;
+    /* margin-top: 2.5rem; */
+    padding: 15px;
+    font-weight: bold;
+    font-size: 1.24rem;
+}
+
+.scores{
+margin: 0 0 0 3rem;
+}
+
+.score-reaction {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem;
+    margin-bottom: 0.8rem;
+    background: hsl(0, 100%, 67%,0.1);
+    color: var(--light-red);
+    width: 80%;
+    border-radius: 15px;
+}
+
+.score-memory {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem;
+    margin-bottom: 0.8rem;
+    background: hsla(39, 100%, 56%,0.1);
+    color: var(--orangey-yellow);
+    width: 80%;
+    border-radius: 15px;
+}
+
+.score-verbal {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem;
+    margin-bottom: 0.8rem;
+    background-color:hsl(166, 100%, 37%,0.1);
+    color: var(--green-teal);
+    width: 80%;
+    border-radius: 15px;
+}
+
+.score-visual {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem;
+    margin-bottom: 0.8rem;
+    background-color: hsla(234, 85%, 45%,0.1);
+    color: var(--cobalt-blue);
+    width: 80%;
+    border-radius: 15px;
+}
+
+.grey-text {
+    color: grey;
+    position: relative;
+    top: 1.3px;
+}
+
+.black-text{
+    color: #222;
+    font-weight: bold;
+    position: relative;
+    top: 3px;
+}
+
+.score-icon img{
+    font-size: 12rem;
+}
+
+span {
+  position: relative;
+   bottom: 4px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    padding: 4rem;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+@media(max-width: 750px){
+    .firstCard{
+        width: 85%;
+        border-radius: 0px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .roundShape{
+        width: 20vh;
+    }
+
+    .container{
+        width: 100%;
+        flex-direction: column;
+        border-radius: 0px;
+    }
+
+    .secondCard{
+        width: 90%;
+        border-radius: 0px;
+    }
+
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+}
