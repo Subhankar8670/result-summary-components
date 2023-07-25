@@ -226,7 +226,7 @@ span {
     color: hsl(228, 45%, 44%);
   }
 
-@media(max-width: 750px){
+@media(max-width: 450px){
     .firstCard{
         width: 85%;
         border-radius: 0px;
